@@ -21,7 +21,7 @@ if(isset($_POST['firstname']) == false || isset($_POST['lastname']) == false || 
     form_error();
 }
 
-if(empty($_POST['firstname']) == false || empty($_POST['lastname']) == false || empty($_POST['email']) == false || empty($_POST['number']) == false || empty($_POST['dob']) == false || empty($_POST['institution']) == false) {
+if(empty($_POST['firstname']) || empty($_POST['lastname']) || empty($_POST['email']) || empty($_POST['number']) || empty($_POST['dob']) || empty($_POST['institution'])) {
     form_error();
 }
 
