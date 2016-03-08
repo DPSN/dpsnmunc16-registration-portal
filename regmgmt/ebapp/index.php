@@ -32,7 +32,7 @@
             $confirm = $ar['confirmed'];
             print("<tr><td>$name</td><td><a href=\"mailto:$email\">$email</a></td><td>$number</td><td>$dob</td><td>$insti</td><td>$delexp</td><td>$chairexp</td><td>$achieved</td><td>$else</td>");
             if($confirm == "yes") {
-                print("<td><input type=\"checkbox\" name=\"reg".$id."\" checked=\"checked\"></td></tr>\n");
+                print("<td><input type=\"checkbox\" name=\"confirmation[]\" checked=\"checked\ value=\"$id\"></td></tr>\n");
             }
             else {
                 print("<td><input type=\"checkbox\" name=\"reg".$id."\"></td></tr>\n");
@@ -41,7 +41,9 @@
         
         ?>
             </table>
+            <button type="submit" value="Update Confirmations">
         </form>
+        <br/>
         <footer>
           &copy; Delhi Public School Newtown Model United Nations Conference 2016.<br/>
           Designed and Developed by <a href="https://facebook.com/swghosh">SwG Ghosh</a>.<br/>
