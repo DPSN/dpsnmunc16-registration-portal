@@ -1,14 +1,14 @@
 <?php
-if(isset($_POST) == false || isset($_POST['confirmation']) == false) {
+if(isset($_POST) == false) {
     die("Something Went Wrong!");
 }
 include_once('../db.php');
-foreach ($id as $_POST['confirmation']) {
-    if($id == '' || empty($id)) {
-        $sql = "UPDATE `ebapp` SET `confirmed` = 'no' WHERE `id`=$id;";
+foreach ($_POST as $id => $value) {
+    if($value == 'yes') {
+        $sql = "UPDATE `ebapp` SET `confirmed` = 'yes' WHERE `id`=$id;";
     }
     else {
-        $sql = "UPDATE `ebapp` SET `confirmed` = 'yes' WHERE `id`=$id;";
+        $sql = "UPDATE `ebapp` SET `confirmed` = 'no' WHERE `id`=$id;";
     }
     mysqli_query($db, $sql);
 }
