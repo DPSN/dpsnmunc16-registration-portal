@@ -35,7 +35,7 @@
                 print("<td><input type=\"checkbox\" name=\"confirmation[]\" checked=\"checked\ value=\"$id\"></td></tr>\n");
             }
             else {
-                print("<td><input type=\"checkbox\" name=\"reg".$id."\"></td></tr>\n");
+                print("<td><input type=\"checkbox\" name=\"confirmation[]\" value=\"$id\"></td></tr>\n");
             }
         }
         

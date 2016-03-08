@@ -2,9 +2,9 @@
 if(isset($_POST) == false || isset($_POST['confirmation']) == false) {
     die("Something Went Wrong!");
 }
-include_once('db.php');
+include_once('../db.php');
 foreach ($id as $_POST['confirmation']) {
-    if($id == '' || isset($id) == false) {
+    if($id == '' || empty($id)) {
         $sql = "UPDATE `ebapp` SET `confirmed` = 'no' WHERE `id`=$id;";
     }
     else {
