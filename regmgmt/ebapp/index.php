@@ -41,7 +41,7 @@
         
         ?>
             </table>
-            <button type="submit" value="Update Confirmations">
+            <button type="submit">Update Confirmations</button>
         </form>
         <br/>
         <footer>
