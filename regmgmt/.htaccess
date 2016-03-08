@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /var/lib/openshift/56dd3bd37628e1825200010d/app-root/runtime/repo/regmgmt/.htpasswd
+Require valid-user
