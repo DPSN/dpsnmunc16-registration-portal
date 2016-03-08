@@ -1,0 +1,8 @@
+body {
+    font-family: 'Raleway';
+    margin: 8%;
+}
+th, td {
+    padding: 30px;
+    text-align: left;
+}
