@@ -9,6 +9,7 @@
     </head>
     <body>
         <h1>Registration Information Panel</h1>
+        <h2>Executive Board Applicants</h2>
         <form method="POST" action="savechanges.php" id="ebapp">
             <table>
                 <tr>
