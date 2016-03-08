@@ -1,5 +1,0 @@
-AuthUserFile /var/lib/openshift/56dd3bd37628e1825200010d/app-root/runtime/repo/regmgmt/.htpasswd
-AuthName "Authentication Required"
-AuthType Basic
-
-require user valid-user
