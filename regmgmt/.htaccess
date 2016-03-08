@@ -1,4 +1,4 @@
-AuthUserFile .htpasswd
+AuthUserFile regmgmt/.htpasswd
 AuthName "Authentication Required"
 AuthType Basic
 

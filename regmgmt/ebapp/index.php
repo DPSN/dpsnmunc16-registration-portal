@@ -32,7 +32,7 @@
             $confirm = $ar['confirmed'];
             print("<tr><td>$name</td><td><a href=\"mailto:$email\">$email</a></td><td>$number</td><td>$dob</td><td>$insti</td><td>$delexp</td><td>$chairexp</td><td>$achieved</td><td>$else</td>");
             if($confirm == "yes") {
-                print("<td><input type=\"checkbox\" name=\"reg".$id."\"></td></tr>\n");
+                print("<td><input type=\"checkbox\" name=\"reg".$id."\" checked=\"checked\"></td></tr>\n");
             }
             else {
                 print("<td><input type=\"checkbox\" name=\"reg".$id."\"></td></tr>\n");
