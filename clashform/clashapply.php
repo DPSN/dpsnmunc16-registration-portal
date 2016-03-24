@@ -3,7 +3,7 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title>Executive Board Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
+        <title>Clash of Caricatures Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../scripts/normalize.css">
     </head>
@@ -51,7 +51,7 @@ $achievement = mysqli_real_escape_string(htmlspecialchars($_POST['achievement'])
 $else = mysqli_real_escape_string(htmlspecialchars($_POST['more']));
 $sql = "INSERT INTO `clashapp` (`fname`, `lname`, `email`, `number`, `dob`, `institution`, `achievement`, `else`) VALUES ('".$fname."', '".$lname."', '".$email."', '".$number."', '".$dob."', '".$institution."', '".$achievement."', '".$else."');";
 if(mysqli_query($db, $sql) == false) {
-    die("Server Error.");
+    die("Form Data Submission Error.");
 }
 ?>
         <pre>Application Successful</pre>
