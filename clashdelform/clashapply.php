@@ -3,7 +3,7 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title>Executive Board Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
+        <title>Clash of Caricatures Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../scripts/normalize.css">
     </head>
@@ -41,9 +41,17 @@ if(strpos($_POST['email'], "@") == false || strpos($_POST['email'], ".") == fals
 }
 
 //Data Entry into Database
-$sql = "INSERT INTO `ebapp` (`fname`, `lname`, `email`, `number`, `dob`, `institution`, `delexp`, `chairexp`, `achievement`, `else`) VALUES ('".$_POST['firstname']."', '".$_POST['lastname']."', '".$_POST['email']."', '".$_POST['number']."', '".$_POST['dob']."', '".$_POST['institution']."', '".$_POST['experience1']."', '".$_POST['experience2']."', '".$_POST['achievement']."', '".$_POST['more']."');";
+$fname = mysqli_real_escape_string(htmlspecialchars($_POST['firstname']));
+$lname = mysqli_real_escape_string(htmlspecialchars($_POST['lastname']));
+$email = mysqli_real_escape_string(htmlspecialchars($_POST['email']));
+$number = mysqli_real_escape_string(htmlspecialchars($_POST['number']));
+$dob = mysqli_real_escape_string(htmlspecialchars($_POST['dob']));
+$insti = mysqli_real_escape_string(htmlspecialchars($_POST['institution']));
+$achievement = mysqli_real_escape_string(htmlspecialchars($_POST['achievement']));
+$else = mysqli_real_escape_string(htmlspecialchars($_POST['more']));
+$sql = "INSERT INTO `clashapp` (`fname`, `lname`, `email`, `number`, `dob`, `institution`, `achievement`, `else`) VALUES ('".$fname."', '".$lname."', '".$email."', '".$number."', '".$dob."', '".$institution."', '".$achievement."', '".$else."');";
 if(mysqli_query($db, $sql) == false) {
-    die("Server Error.");
+    die("Form Data Submission Error.");
 }
 ?>
         <pre>Application Successful</pre>
