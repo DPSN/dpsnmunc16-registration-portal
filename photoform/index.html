@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>Photography and Videography Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../scripts/normalize.css">
+        <script src="../scripts/formvalidate.js"></script>
+    </head>
+    <body>
+
+      <form id="ebform" action="photoapply.php" method="POST" onsubmit="return form_validate()">
+      
+        <h1><br/><a href="http://register.dpsnmunc.in"><img src="../cred.png" width="100%"/></a><br/>Photography and Videography<br/>Application</h1>
+        
+        <fieldset>
+            <legend><span class="number">1</span>Your basic info</legend>
+            Name
+            <input type="text" class="firstname" name="firstname" placeholder="first name" required="required" />
+            <input type="text" class="lastname" name="lastname" placeholder="last name" required="required" /><br/>
+            Email
+            <input type="email" class="email" name="email" placeholder="email address" required="required" /><br/>
+            Contact Number
+            +91 <input type="number" name="number" placeholder="XXXXXXXXXX" id="number" required="required" /><br>
+            Date of Birth
+            <input type="date" name="dob" class="dob" placeholder="dd/mm/yyyy" required="required" /><br/>
+            Name of Institution
+            <input type="text" class="institution" name="institution" placeholder="institution name" required="required" /><br/>
+        </fieldset>
+        
+        <fieldset>
+            <legend><span class="number">2</span>Other Details</legend>
+            General Achievements<br/>
+            <textarea class="achievement" name="achievement" placeholder="what you achieved"></textarea><br/>
+            Photography Workshops Attended<br/>
+            <textarea class="experience1" name="experience1" placeholder="share your experiences"></textarea><br/>
+            Photography Events Attended and Awards<br/>
+            <textarea class="experience2" name="experience2" placeholder="share your experiences"></textarea><br/>
+            Anything Else<br/>
+            <textarea class="more" name="more" placeholder="tell us..."></textarea><br/>
+        </fieldset>
+        <button type="submit">Apply</button>
+      </form>
+      <br/>
+      <footer>
+          &copy; Delhi Public School Newtown Model United Nations Conference 2016.<br/>
+          Designed and Developed by <a href="https://facebook.com/swghosh">SwG Ghosh</a>.<br/>
+          <a href="https://twitter.com/SwG_Ghosh" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @SwG_Ghosh</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br/>
+      </footer>
+    </body>
+</html>
