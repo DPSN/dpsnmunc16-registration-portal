@@ -51,7 +51,7 @@ $institution = mysqli_real_escape_string($db, htmlspecialchars($_POST['instituti
 $achievement = mysqli_real_escape_string($db, htmlspecialchars($_POST['achievement']));
 $experience = mysqli_real_escape_string($db, htmlspecialchars($_POST['experience']));
 $else = mysqli_real_escape_string($db, htmlspecialchars($_POST['more']));
-$committee = mysqli_real_escape_string($db, htmlspecialchars($_POST['committee']));
+$committee = htmlspecialchars($_POST['committee']);
 
 if($committee == "security council" || $committee == "general assembly") {
     //start of form 2
