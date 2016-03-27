@@ -75,7 +75,7 @@ if($committee == "security council" || $committee == "general assembly") {
         <fieldset>
             <legend><span class="number">1</span>Co-delegate basic info</legend>
             Name
-            <input type="text" class="firstname" name="firstname1" placeholder="first name" required="required" />
+            <input type="text" class="firstname" name="firstname2" placeholder="first name" required="required" />
             <input type="text" class="lastname" name="lastname2" placeholder="last name" required="required" /><br/>
             Email
             <input type="email" class="email" name="email2" placeholder="email address" required="required" /><br/>
@@ -114,7 +114,7 @@ else {
     $sql = "INSERT INTO `indidelapp` (`fname`, `lname`, `email`, `number`, `dob`, `institution`, `achievement`, `experience`, `else`, `committee`) VALUES ('".$fname."', '".$lname."', '".$email."', '".$number."', '".$dob."', '".$institution."', '".$achievement."', '".$experience."', '".$else."', '".$committee."');";
     if(mysqli_query($db, $sql) == false) {
         die("Form Data Submission Error.");
-    }
+     }
 ?>
         <pre>Application Successful</pre>
 <?php 
