@@ -3,16 +3,16 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title>Photography and Videography Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
+        <title>Individual Delegation Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../scripts/normalize.css">
         <script src="../scripts/formvalidate.js"></script>
     </head>
     <body>
 
-      <form id="ebform" action="photoapply.php" method="POST" onsubmit="return form_validate()">
+      <form id="ebform" action="indidelapply.php" method="POST" onsubmit="return form_validate()">
       
-        <h1><br/><a href="http://register.dpsnmunc.in"><img src="../cred.png" width="100%"/></a><br/>Photography and Videography<br/>Application</h1>
+        <h1><br/><a href="http://register.dpsnmunc.in"><img src="../cred.png" width="100%"/></a><br/>Individual Delegation<br/>Application</h1>
         
         <fieldset>
             <legend><span class="number">1</span>Your basic info</legend>
@@ -31,15 +31,21 @@
         
         <fieldset>
             <legend><span class="number">2</span>Other Details</legend>
+            Committee<br/>
+            <select name="committee">
+                <option value="security council">Security Council</option>
+                <option value="general assembly">General Assembly</option>
+                <option value="ecosoc">Economic and Social Council</option>
+                <option value="international press">International Press</option>
+            </select><br/>
             General Achievements<br/>
             <textarea class="achievement" name="achievement" placeholder="what you achieved"></textarea><br/>
-            Photography Workshops Attended (if any)<br/>
-            <textarea class="experience1" name="experience1" placeholder="share your experiences"></textarea><br/>
-            Photography Events Attended and Awards (if any)<br/>
-            <textarea class="experience2" name="experience2" placeholder="share your experiences"></textarea><br/>
+            Previous Model UN Experience as a Delegate<br/>
+            <textarea class="experience" name="experience" placeholder="share your experiences"></textarea><br/>
             Anything Else<br/>
             <textarea class="more" name="more" placeholder="tell us..."></textarea><br/>
         </fieldset>
+        
         <button type="submit">Apply</button>
       </form>
       <br/>
