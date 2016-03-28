@@ -9,15 +9,15 @@
     </head>
     <body>
         <h1>Registration Information Panel</h1>
-        <h2>Executive Board Applicants</h2>
+        <h2>Clash of Caricature Applicants</h2>
         <form method="POST" action="savechanges.php">
             <table>
                 <tr>
-                    <th>Name</th><th>Email</th><th>Phone</th><th>Date of Birth</th><th>Institution Name</th><th>Delegate Experience</th><th>Chairperson Experience</th><th>Achievements</th><th>More</th><th>Confirmation</th>
+                    <th>Name</th><th>Email</th><th>Phone</th><th>Date of Birth</th><th>Institution Name</th><th>Achievements</th><th>More</th><th>Confirmation</th>
                 </tr>
         <?php
         include_once("../db.php");
-        $sql = "SELECT * FROM `ebapp`;";
+        $sql = "SELECT * FROM `clashapp`;";
         $res = mysqli_query($db, $sql);
         while($ar = mysqli_fetch_array($res)) {
             $id = $ar['id'];
@@ -26,12 +26,10 @@
             $number = "+91".$ar['number'];
             $dob = $ar['dob'];
             $insti = $ar['institution'];
-            $delexp = $ar['delexp'];
-            $chairexp = $ar['chairexp'];
             $achieved = $ar['achievement'];
             $else = $ar['else'];
             $confirm = $ar['confirmed'];
-            print("<tr><td>$name</td><td><a href=\"mailto:$email\">$email</a></td><td>$number</td><td>$dob</td><td>$insti</td><td>$delexp</td><td>$chairexp</td><td>$achieved</td><td>$else</td>");
+            print("<tr><td>$name</td><td><a href=\"mailto:$email\">$email</a></td><td>$number</td><td>$dob</td><td>$insti</td><td>$achieved</td><td>$else</td>");
             if($confirm == "yes") {
                 print("<td>");
                 print("<input type=\"radio\" name=\"$id\" checked=\"checked\" value=\"yes\">Confirmed</input>");
