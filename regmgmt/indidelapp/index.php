@@ -30,7 +30,7 @@
             $achieved = $ar['achievement'];
             $else = $ar['else'];
             $confirm = $ar['confirmed'];
-            $committee = $ar['committeee'];
+            $committee = $ar['committee'];
             print("<tr><td>$name</td><td><a href=\"mailto:$email\">$email</a></td><td>$number</td><td>$dob</td><td>$insti</td><td>$delexp</td><td>$achieved</td><td>$else</td><td>$committee</td>");
             if($confirm == "yes") {
                 print("<td>");
@@ -80,7 +80,7 @@
             $delexp2 = $ar['delexp2'];
             $achieved2 = $ar['achievement2'];
             $else2 = $ar['else2'];
-            $committee = $ar['committeee'];
+            $committee = $ar['committee'];
             $confirm = $ar['confirmed'];
             print("<tr><td>$name1</td><td><a href=\"mailto:$email1\">$email1</a></td><td>$number1</td><td>$dob1</td><td>$insti1</td><td>$delexp1</td><td>$achieved1</td><td>$else1</td><td>$name2</td><td><a href=\"mailto:$email2\">$email2</a></td><td>$number2</td><td>$dob2</td><td>$insti2</td><td>$delexp2</td><td>$achieved2</td><td>$else2</td><td>$committee</td>");
             if($confirm == "yes") {
