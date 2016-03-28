@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../scripts/normalize.css">
         <script src="../scripts/formvalidate.js"></script>
+        <script src="../scripts/buttontext.js"></script>
     </head>
     <body>
 
@@ -31,13 +32,13 @@
         
         <fieldset>
             <legend><span class="number">2</span>Other Details</legend>
-            <small><sup>*</sup> Note : General Assembly and Security Council are double delegate committees. You'll be asked for co-delegate info in case of selecting these committes.</small>
+            <small><sup>*</sup> Note : General Assembly and Security Council are double delegate committees. You'll be asked for co-delegate's info in case of selecting these committes.</small>
             <br/><br/>
             Committee<br/>
-            <select name="committee">
+            <select name="committee" onchange="button()" >
                 <option value="general assembly">General Assembly</option>
                 <option value="security council">Security Council</option>
-                <option value="economic and scocial council">Economic and Social Council</option>
+                <option value="economic and social council">Economic and Social Council</option>
                 <option value="international press corps">International Press Corps</option>
             </select><br/>
             General Achievements<br/>
@@ -48,7 +49,7 @@
             <textarea class="more" name="more" placeholder="tell us..."></textarea><br/>
         </fieldset>
         
-        <button type="submit">Apply</button>
+        <button type="submit" id="btn">Proceed</button>
       </form>
       <br/>
       <footer>
