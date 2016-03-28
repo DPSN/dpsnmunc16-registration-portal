@@ -13,7 +13,7 @@
         <form method="POST" action="savechanges.php">
             <table>
                 <tr>
-                    <th>Name</th><th>Email</th><th>Phone</th><th>Date of Birth</th><th>Institution Name</th><th>Delegate Experience</th><th>Achievements</th><th>More</th><th>Confirmation</th>
+                    <th>Name</th><th>Email</th><th>Phone</th><th>Date of Birth</th><th>Institution Name</th><th>Delegate Experience</th><th>Achievements</th><th>More</th><th>Committee</th><th>Confirmation</th>
                 </tr>
         <?php
         include_once("../db.php");
@@ -30,7 +30,8 @@
             $achieved = $ar['achievement'];
             $else = $ar['else'];
             $confirm = $ar['confirmed'];
-            print("<tr><td>$name</td><td><a href=\"mailto:$email\">$email</a></td><td>$number</td><td>$dob</td><td>$insti</td><td>$delexp</td><td>$achieved</td><td>$else</td>");
+            $committee = $ar['committeee'];
+            print("<tr><td>$name</td><td><a href=\"mailto:$email\">$email</a></td><td>$number</td><td>$dob</td><td>$insti</td><td>$delexp</td><td>$achieved</td><td>$else</td><td>$committee</td>");
             if($confirm == "yes") {
                 print("<td>");
                 print("<input type=\"radio\" name=\"$id\" checked=\"checked\" value=\"yes\">Confirmed</input>");
@@ -55,7 +56,7 @@
         <form method="POST" action="savechanges2.php">
             <table>
                 <tr>
-                    <th>Name 1</th><th>Email 1</th><th>Phone 1</th><th>Date of Birth 1</th><th>Institution Name 1</th><th>Delegate Experience 1</th><th>Achievements 1</th><th>More 1</th><th>Name 2</th><th>Email 2</th><th>Phone 2</th><th>Date of Birth 2</th><th>Institution Name 2</th><th>Delegate Experience 2</th><th>Achievements 2</th><th>More 2</th><th>Confirmation</th>
+                    <th>Name 1</th><th>Email 1</th><th>Phone 1</th><th>Date of Birth 1</th><th>Institution Name 1</th><th>Delegate Experience 1</th><th>Achievements 1</th><th>More 1</th><th>Name 2</th><th>Email 2</th><th>Phone 2</th><th>Date of Birth 2</th><th>Institution Name 2</th><th>Delegate Experience 2</th><th>Achievements 2</th><th>More 2</th><th>Committee</th><th>Confirmation</th>
                 </tr>
         <?php
         include_once("../db.php");
@@ -79,8 +80,9 @@
             $delexp2 = $ar['delexp2'];
             $achieved2 = $ar['achievement2'];
             $else2 = $ar['else2'];
+            $committee = $ar['committeee'];
             $confirm = $ar['confirmed'];
-            print("<tr><td>$name1</td><td><a href=\"mailto:$email1\">$email1</a></td><td>$number1</td><td>$dob1</td><td>$insti1</td><td>$delexp1</td><td>$achieved1</td><td>$else1</td><tr><td>$name2</td><td><a href=\"mailto:$email2\">$email2</a></td><td>$number2</td><td>$dob2</td><td>$insti2</td><td>$delexp2</td><td>$achieved2</td><td>$else2</td>");
+            print("<tr><td>$name1</td><td><a href=\"mailto:$email1\">$email1</a></td><td>$number1</td><td>$dob1</td><td>$insti1</td><td>$delexp1</td><td>$achieved1</td><td>$else1</td><td>$name2</td><td><a href=\"mailto:$email2\">$email2</a></td><td>$number2</td><td>$dob2</td><td>$insti2</td><td>$delexp2</td><td>$achieved2</td><td>$else2</td><td>$committee</td>");
             if($confirm == "yes") {
                 print("<td>");
                 print("<input type=\"radio\" name=\"$id\" checked=\"checked\" value=\"yes\">Confirmed</input>");
