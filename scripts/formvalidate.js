@@ -24,22 +24,22 @@ function form_validate() {
     var insti = document.forms["ebform"]["institution"].value;
     
     if(fname == null || fname == "" || name_validate(fname) == false || lname == null || lname == "" || name_validate(lname) == false) {
-        alert("Invalid Name.");
+        alert("Invalid name. First name and last name should always start in a capital letter.");
         return false;
     }
     
     if(email == null || email == "" || email_validate(email) == false) {
-        alert("Invalid e-Mail.");
+        alert("Invalid email. Email address should contain a dot as well as @ symbol.");
         return false;
     }
     
     if(num == null || num == "" || num.length != 10) {
-        alert("Invalid Contact Number.");
+        alert("Invalid contact number. Contact number should comprise exactly of 10 digits.");
         return false;
     }
     
     if(insti == null || insti == "" || name_validate(insti) == false) {
-        alert("Invalid Institution Name.");
+        alert("Invalid institution Name. Institution name should always start in a capital letter.");
         return false;
     }
     
