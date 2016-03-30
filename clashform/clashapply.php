@@ -56,7 +56,7 @@ if(mysqli_query($db, $sql) == false) {
 ?>
         <form id="ebform" action="">
       
-        <h1><br/><a href="http://register.dpsnmunc.in"><img src="cred.png" width="100%"/></a><br/>Registration Portal<br/></a></h1>
+        <h1><br/><a href="http://register.dpsnmunc.in"><img src="../cred.png" width="100%"/></a><br/>Clash of Caricatures<br/>Application</h1>
         <br/>
         Application Successful.
       </form>
