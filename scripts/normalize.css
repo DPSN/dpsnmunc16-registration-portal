@@ -126,12 +126,10 @@ footer {
     font-family: 'Raleway', sans-serif;
 }
 a {
-    color: midnightblue;
+    color: #6571BA;
     text-decoration: none;
 }
-.form-button {
-    color: #02e;
-}
-.form-button:hover {
+a:hover {
     color: #4bc970;
+    text-decoration: underline;
 }
