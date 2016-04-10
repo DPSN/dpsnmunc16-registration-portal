@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Registration Information Panel</h1>
-        <h2>Individual Delegation Applicants</h2>
+        <h2>Individual Delegate Applicants</h2>
         <form method="POST" action="savechanges.php">
             <table>
                 <tr>

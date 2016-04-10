@@ -3,7 +3,7 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title>Individual Delegation Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
+        <title>Individual Delegate Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../scripts/normalize.css">
     </head>
@@ -69,7 +69,7 @@ if(mysqli_query($db, $sql) == false) {
 ?>
         <form id="ebform" action="">
       
-        <h1><br/><a href="http://register.dpsnmunc.in"><img src="../cred.png" width="100%"/></a><br/>Individual Delegation<br/>Application</h1>
+        <h1><br/><a href="http://register.dpsnmunc.in"><img src="../cred.png" width="100%"/></a><br/>Individual Delegate<br/>Application</h1>
         <br/>
         Application Successful.
       </form>
