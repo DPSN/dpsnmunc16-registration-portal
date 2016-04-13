@@ -63,8 +63,8 @@ if(mysqli_query($db, $sql) == false) {
       <br/>
       <footer>
           &copy; Delhi Public School Newtown Model United Nations Conference 2016.<br/>
-          Designed and Developed by <a href="https://facebook.com/Swaruphosh">Swarup Ghosh</a>.<br/>
-          <a href="https://twitter.com/Swarup_Ghosh" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Swarup_Ghosh</a>
+          Designed and Developed by <a href="https://facebook.com/swghosh">Swarup Ghosh</a>.<br/>
+          <a href="https://twitter.com/SwG_Ghosh" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @SwG_Ghosh</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br/>
       </footer>
     </body>
