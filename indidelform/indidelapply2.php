@@ -71,7 +71,7 @@ if(mysqli_query($db, $sql) == false) {
       
         <h1><br/><a href="http://register.dpsnmunc.in"><img src="../cred.png" width="100%"/></a><br/>Individual Delegate<br/>Application</h1>
         <br/>
-        Application Successful.
+        Welcome aboard! See you at the conference.
       </form>
       <br/>
       <footer>
