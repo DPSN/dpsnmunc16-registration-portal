@@ -73,7 +73,7 @@ if($committee == "security council" || $committee == "general assembly") {
         <h1><br/><a href="http://register.dpsnmunc.in"><img src="../cred.png" width="100%"/></a><br/>Individual Delegate<br/>Application</h1>
         
         <fieldset>
-            <legend><span class="number">3</span>Co-delegate basic info</legend>
+            <legend><span class="number">3</span>We need to know your co-delegate</legend>
             Name
             <input type="text" class="firstname" name="firstname2" placeholder="first name" required="required" />
             <input type="text" class="lastname" name="lastname2" placeholder="last name" required="required" /><br/>
@@ -89,8 +89,8 @@ if($committee == "security council" || $committee == "general assembly") {
         
         <fieldset>
             <legend><span class="number">4</span>Other Details</legend>
-            General Achievements<br/>
-            <textarea class="achievement" name="achievement2" placeholder="what you achieved"></textarea><br/>
+            Your Achievements<br/>
+            <textarea class="achievement" name="achievement2" placeholder="how do you stand out?"></textarea><br/>
             Previous Model UN Experience as a Delegate<br/>
             <textarea class="experience" name="experience2" placeholder="share your experiences"></textarea><br/>
             Anything Else<br/>
