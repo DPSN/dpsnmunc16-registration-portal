@@ -12,6 +12,7 @@ body {
     background-color: rgba(53, 10, 4, .5);
     background-size: cover;
 	background-repeat:repeat;
+    background-attachment: fixed;
 }
 
 body {
