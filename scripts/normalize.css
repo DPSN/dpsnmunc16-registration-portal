@@ -7,6 +7,11 @@
 body {
     font-family: 'Raleway';
     margin: 3%;
+    background-attachment: fixed;
+    background-image: url(../bg.jpg);
+    background-color: rgba(53, 10, 4, .5);
+    background-size: cover;
+	background-repeat:repeat;
 }
 
 body {
@@ -124,6 +129,11 @@ label.light {
 footer {
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    color: #eee;
+}
+footer a {
+    color: #eee;
+    text-decoration: underline;
 }
 a {
     color: #6571BA;
