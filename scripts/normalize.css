@@ -9,7 +9,7 @@ body {
     margin: 3%;
     background-attachment: fixed;
     background-image: url(../bg.jpg);
-    background-color: rgba(53, 10, 4, .5);
+    background-color: #000;
     background-size: cover;
 	background-repeat:repeat;
     background-attachment: fixed;
