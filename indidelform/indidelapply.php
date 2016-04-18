@@ -88,7 +88,7 @@ if($committee == "security council" || $committee == "general assembly") {
         </fieldset>
         
         <fieldset>
-            <legend><span class="number">4</span>Other Details</legend>
+            <legend><span class="number">4</span>Details</legend>
             Your Achievements<br/>
             <textarea class="achievement" name="achievement2" placeholder="how do you stand out?"></textarea><br/>
             Previous Model UN Experience as a Delegate<br/>
