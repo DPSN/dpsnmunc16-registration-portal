@@ -1,6 +1,6 @@
 ![alt text](http://register.dpsnmunc.in/logo.png "Official Logo")
 
-## Delhi Public School Newtown Model United Conference 2016 Registration Portal
+## Delhi Public School Newtown Model United Nations Conference 2016 Registration Portal
 
 ![alt text](http://register.dpsnmunc.in/cred.png "Dock Image")
 # register.dpsnmunc.in
