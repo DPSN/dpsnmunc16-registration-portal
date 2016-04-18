@@ -29,7 +29,7 @@ function form_validate() {
     }
     
     if(email == null || email == "" || email_validate(email) == false) {
-        alert("Invalid email. Email address should contain a dot as well as @ symbol.");
+        alert("Invalid email. Email address should contain a dot(.) as well as an @ symbol.");
         return false;
     }
     
