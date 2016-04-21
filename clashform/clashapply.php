@@ -53,6 +53,7 @@ $sql = "INSERT INTO `clashapp` (`fname`, `lname`, `email`, `number`, `dob`, `ins
 if(mysqli_query($db, $sql) == false) {
     die("Form Data Submission Error.");
 }
+include_once('sendmail.php');
 ?>
         <form id="ebform" action="">
       
