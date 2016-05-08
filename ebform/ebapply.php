@@ -6,6 +6,7 @@
         <title>Executive Board Application | Delhi Public School Newtown Model United Nations Conference 2016</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../scripts/normalize.css">
+        <meta name="theme-color" content="#69F">
     </head>
     <body>
 <?php

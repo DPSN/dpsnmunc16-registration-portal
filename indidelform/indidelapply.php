@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../scripts/normalize.css">
         <script src="../scripts/formvalidate.js"></script>
+        <meta name="theme-color" content="#69F">
     </head>
     <body>
 <?php
