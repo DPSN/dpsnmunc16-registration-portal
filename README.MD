@@ -2,7 +2,7 @@
 
 ## Delhi Public School Newtown Model United Nations Conference 2016 Registration Portal
 
-Hosted on [openshift.com](http://openshift.com), as a php5 application at [site-dpsnmunc.rhcloud.com](http://site-dpsnmunc.rhcloud.com).
+Hosted on [openshift.com](http://openshift.com), as a php5 application.
 
 ![alt text](http://register.dpsnmunc.in/cred.png "Dock Image")
 # register.dpsnmunc.in
